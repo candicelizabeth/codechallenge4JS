@@ -5,8 +5,8 @@
     d. add seed data
     e. add the serializer gem // add serializer for art pieces OR do it directly on the controller your choice
 
-2. display all of the pieces of art on the frontend 
-3. be able to add all a piece of art 
+2. display all of the pieces on the frontend 
+3. be able to add a piece of art 
     -make sure it is happening on the front and backend
 4. be able to delete a piece of art 
     -make sure it is happening on the front and backend
@@ -18,7 +18,7 @@ oil = Category.create(name: 'oil')
 sculpture = Category.create(name: 'sculpture')
 watercolor = Category.create(name: 'watercolor')
 
-Art.create([
+Piece.create([
     {name: 'The Water Lilly Pond', year: 1899,  artist:'Monet' , image: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/437127/796089/restricted", category: oil},
      {name: 'Little Dancer Aged Fourteen', year: 1881,  artist: 'Degas', image: "https://m.media-amazon.com/images/I/81ELeUOyw1L._AC_SY741_.jpg", category: sculpture},
      {name:'Starlight Night', year:1917, artist:"Georgia O'keeffe", image:"https://m.media-amazon.com/images/I/61lrPctoIcL._AC_SX450_.jpg", category: watercolor},
